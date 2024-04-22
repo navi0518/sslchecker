@@ -1,3 +1,23 @@
+// Add event listener for keypress on the input field
+document.getElementById("domain").addEventListener("keypress", function(event) {
+    // Check if the key pressed is "Enter" (key code 13)
+    if (event.key === "Enter") {
+      // Prevent the default action of the Enter key (form submission)
+      event.preventDefault();
+      // Call the checkSSL function
+      checkSSL();
+    }
+  });// Add event listener for keypress on the input field
+  document.getElementById("domain").addEventListener("keypress", function(event) {
+    // Check if the key pressed is "Enter" (key code 13)
+    if (event.key === "Enter") {
+      // Prevent the default action of the Enter key (form submission)
+      event.preventDefault();
+      // Call the checkSSL function
+      checkSSL();
+    }
+  });
+
 function checkSSL() {
   var domain = document.getElementById("domain").value.trim();
   if (domain === "") {
