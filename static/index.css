@@ -58,7 +58,6 @@ button {
   cursor: pointer;
   display: inline-block;
   margin-right: 10px;
-
   transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
@@ -67,8 +66,8 @@ button {
   background: red;
 }
 .reset:hover {
-  background: rgb(15, 15, 15);
-  color: red;
+  background: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: larger;
 }
 
