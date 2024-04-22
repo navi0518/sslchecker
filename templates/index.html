@@ -14,19 +14,8 @@
     />
     <link rel="stylesheet" href="/static/index.css" />
   </head>
-  
-  <body class="container">
-    <h1>SSL Checker</h1>
-    <label for="domain">Enter domain:</label>
-    <input type="text" id="domain" name="domain" placeholder="example.com" />
-    <button onclick="checkSSL()">Check SSL</button>
 
-    <!-- Add a reset button to clear the input field and SSL information/alert -->
-    <button class="reset" onclick="resetForm()">Reset</button>
-
-    <!-- Add an empty div with id "sslInfo" where SSL information will be displayed -->
-    <div id="sslInfo"></div>
-
+  <body>
     <!-- Add a Bootstrap alert with the class "alert alert-danger" for displaying error messages -->
     <div
       id="alertMessage"
@@ -34,6 +23,18 @@
       role="alert"
       style="display: none"
     ></div>
+    <div class="container">
+      <h1>SSL Checker</h1>
+      <label for="domain">Enter domain:</label>
+      <input type="text" id="domain" name="domain" placeholder="example.com" />
+      <button onclick="checkSSL()">Check SSL</button>
+
+      <!-- Add a reset button to clear the input field and SSL information/alert -->
+      <button class="reset" onclick="resetForm()">Reset</button>
+
+      <!-- Add an empty div with id "sslInfo" where SSL information will be displayed -->
+      <div id="sslInfo" class="container"></div>
+    </div>
 
     <!-- Bootstrap js -->
 
